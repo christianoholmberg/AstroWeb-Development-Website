@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+:root {
+  --primary-white: #ffffff;
+  --primary-light-grey: #f4f4f4;
+  --primary-grey: #5E5F66;
+  --primary-dark: rgb(52, 58, 64);
+  --primary-blue: #0275d8;
+  --primary-black: #000000;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Roboto Mono", sans-serif !important;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/*************************** NAVBAR **********************************************/
+
+nav {
+  z-index: 2;
+}
+
+.logo {
+  width: 14rem;
+}
+
+/************* MENU LINKS ***************/
+
+
+nav a.nav-link {
+  font-size: 1rem;
+  letter-spacing: .0125rem;
+  font-weight: 750 !important;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.1875rem solid var(--primary-grey);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6 rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-blue);
+}
+
+/*************************** HEADER **********************************************/
+
+video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 3;
+}
+
+.header-wrapper {
+  position: relative;
+  background: url(video-1.mp4) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  font-family: "Robot Mono", sans-serif;
+  z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/************* TYPED TEXTS ***************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
   }
-  to {
-    transform: rotate(360deg);
+  .typed-text {
+    font-size: 1.3rem !important;
   }
 }
+
+/************* HEADER MAIN OFFER BUTTON ***************/
+.btn-main-offer {
+  border: 1px solid var(--primary-blue);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+
+
+/*************************** ABOUT **********************************************/
+ .about-header{
+   color: black;
+   text-transform: uppercase;
+   margin-top: 6rem;
+ }
