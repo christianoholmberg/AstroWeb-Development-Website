@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo.png";
+import logo from "../logo.jpg";
 
 import { NavLink } from "react-router-dom";
 
@@ -9,13 +9,13 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 function Navbar() {
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light fixed-top"
-      style={{ backgroundColor: "#5E5F66" }}
+      className="navbar navbar-expand-lg navbar-dark fixed-top"
+      style={{ backgroundColor: "#18191A" }}
     >
       <div className="container">
-        <a className="navbar-brand">
+        <NavLink className="navbar-brand" to="/">
           <img src={logo} className="logo" alt="Navbar Logo" />
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"

@@ -2,17 +2,21 @@ import React from "react";
 import Typed from "react-typed";
 import { Link } from "react-router-dom";
 
+import covervid from "../video-1.mp4";
+
 const Header = () => {
   return (
     <div id="Home" className="header-wrapper">
       <div className="main-info">
-        <video src="videos/video-1.mp4" autoPlay loop muted />
-        <h1>Web Development and Search Engine Optimization</h1>
+        <img src="logo.png" alt="" />
+        <video src={covervid} type="video/mp4" autoPlay loop muted />
+        <h1>Where The Limits of Your Website Are Out of This World</h1>
         <Typed
           className="typed-text"
           strings={[
             "Web Design",
             "Web Development",
+            "Website Hosting",
             "User Experience",
             "Search Engine Optimization",
           ]}
@@ -20,8 +24,14 @@ const Header = () => {
           backSpeed={60}
           loop
         />
-        <Link to="Contacts" className="btn-main-offer">
-          Contact Me
+        <Link
+          smooth={true}
+          to="Contacts"
+          offset={-90}
+          href="#"
+          className="btn-main-offer"
+        >
+          Contact Us
         </Link>
       </div>
     </div>
