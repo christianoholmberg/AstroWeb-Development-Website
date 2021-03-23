@@ -20,7 +20,7 @@ const Header = () => {
             "User Experience",
             "Search Engine Optimization",
           ]}
-          typeSpeed={40}
+          typeSpeed={100}
           backSpeed={60}
           loop
         />

@@ -36,7 +36,8 @@ nav {
 
 
 nav a.nav-link {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
   letter-spacing: .0125rem;
   font-weight: 750 !important;
   cursor: pointer;
@@ -108,7 +109,7 @@ video {
 .main-info h1 {
   color: var(--primary-white);
   font-weight: 500;
- 
+  font-size: 350%;
 }
 
 /************* TYPED TEXTS ***************/
